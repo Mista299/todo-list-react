@@ -1,0 +1,53 @@
+/* General container for loading state */
+.LoadingTodo-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: rgba(45, 55, 72, 0.8); /* Similar dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Complete Icon skeleton */
+.LoadingTodo-completeIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(200, 200, 200, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(200, 200, 200, 0.1) 75%);
+    background-size: 200% 200%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+/* Delete Icon skeleton */
+.LoadingTodo-deleteIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(200, 200, 200, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(200, 200, 200, 0.1) 75%);
+    background-size: 200% 200%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+/* Loading text skeleton */
+.LoadingTodo-text {
+    flex-grow: 1;
+    height: 16px;
+    margin: 0 10px;
+    background: linear-gradient(90deg, rgba(200, 200, 200, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(200, 200, 200, 0.1) 75%);
+    background-size: 200% 200%;
+    border-radius: 4px;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+/* Keyframes for the skeleton loading animation */
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

@@ -1,0 +1,86 @@
+/* General container for each todo item */
+.TodoItem {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: rgba(45, 55, 72, 0.8); /* Dark background with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .TodoItem:hover {
+    background: rgba(45, 55, 72, 1); /* Full opacity on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  /* Paragraph for todo text */
+  .TodoItem-p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    flex-grow: 1; /* Ensure the text takes up available space */
+    padding: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Strikethrough and dimmed color for completed items */
+  .TodoItem-p--complete {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.5); /* Dimmed color for completed items */
+  }
+  
+  /* General styles for icons */
+  .Icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Icon-svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff; /* Default icon color */
+  }
+  
+  /* Specific styles for the check icon */
+  .Icon-check {
+    background-color: rgba(0, 255, 171, 0.2);
+    border: 2px solid rgba(0, 255, 171, 0.4);
+  }
+  
+  .Icon-check:hover {
+    background-color: #00ffab;
+    transform: scale(1.1);
+  }
+  
+  /* Active state for check icon when the todo is completed */
+  .Icon-check--active {
+    background-color: #00ffab;
+    fill: #ffffff;
+  }
+  
+  /* Specific styles for the delete icon */
+  .Icon-delete {
+    background-color: rgba(255, 69, 58, 0.2); /* Soft red background */
+    border: 2px solid rgba(255, 69, 58, 0.4);
+  }
+  
+  .Icon-delete:hover {
+    background-color: #ff453a; /* Brighter red on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Add spacing between icons and text */
+  .Icon + .TodoItem-p {
+    margin-left: 10px;
+  }
+  
