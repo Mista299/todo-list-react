@@ -1,0 +1,102 @@
+/* Estilo del formulario */
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio uniforme entre los elementos */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de la etiqueta */
+label {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo del textarea */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    background-color: #f4f6f8;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #202329;
+    resize: none;
+    transition: border-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Interacción cuando el textarea está en foco */
+textarea:focus {
+    outline: none;
+    border-color: #61dafb; /* Color de foco acorde al esquema del proyecto */
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+/* Contenedor de botones */
+.TodoForm-buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacio entre botones */
+    width: 100%;
+}
+
+/* Estilo base de los botones */
+.TodoForm-button {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    width: 48%;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo del botón de añadir */
+.TodoForm-button--add {
+    box-shadow: 0 8px 20px rgba(97, 218, 251, 0.4);
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.TodoForm-button--add:hover {
+    background-color: #5cc2e6;
+    box-shadow: 0 10px 25px rgba(97, 218, 251, 0.5);
+}
+
+/* Estilo del botón de cancelar */
+.TodoForm-button--cancel {
+    box-shadow: 0 8px 20px rgba(97, 218, 251, 0.4);
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.TodoForm-button--cancel:hover {
+    background-color: #d32f2f;
+    color: white;
+    box-shadow: 0 4px 12px rgba(97, 218, 251, 0.1);
+}
