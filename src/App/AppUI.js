@@ -55,14 +55,7 @@ function AppUI() {
 
         {openModal && (
           <Modal>
-            <h2>Funcionalidad de agregar TODO</h2>
             <TodoForm />
-            <button
-              className="close-modal"
-              onClick={() => setOpenModal(false)} // Cierra el modal al hacer clic
-            >
-              Cerrar
-            </button>
           </Modal>
         )}
       </div>
